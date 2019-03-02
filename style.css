@@ -62,9 +62,10 @@ p.indent{
 }
 
 p.pt{
-	font-size: 50%;
-	letter-spacing: 1px;
+	font-size: 60%;
+	letter-spacing: 2px;
 	width: 95%;
+	line-height: 20px;
 }
 
 img.padding{
