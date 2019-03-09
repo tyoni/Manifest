@@ -72,12 +72,6 @@ img.aboutImage{
 .aboutWrapper{
 	padding-top: 65px;
 	padding-bottom: 65px;
-	background-color: #1a1e23;
-	max-height: 510px;
-	width: 100vw;
-	left: 0;
-	position: absolute;
-	overflow: hidden;
 }
 
 .project{
