@@ -47,6 +47,10 @@ p.indent{
 	padding-bottom: 15px;
 }
 
+i.fyi{
+	font-size: 13px;
+}
+
 /* image stuff */
 img{
 	display: block;
@@ -83,7 +87,9 @@ img.aboutImage{
 
 .aboutText{
 	margin-top: -70px;
-	width: 650px;
+	width: 700px;
+	line-height: 27px;
+	word-wrap: break-word;
 }
 
 .project{
