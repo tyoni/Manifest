@@ -21,6 +21,11 @@ h2 {
 	font-family: 'Work Sans', sans-serif;
 }
 
+a{
+	text-decoration: none;
+	color: #1629F9;
+}
+
 article{
 	margin-left: auto;
 	margin-right: auto;
@@ -72,6 +77,13 @@ img.aboutImage{
 .aboutWrapper{
 	padding-top: 65px;
 	padding-bottom: 65px;
+	height: 550px;
+	overflow: hidden;
+}
+
+.aboutText{
+	margin-top: -25px;
+	width: 650px;
 }
 
 .project{
@@ -111,7 +123,7 @@ p.pt{
 	letter-spacing: 2px;
 	width: 350px;
 	line-height: 20px;
-	text-align: center;
+	text-align: center
 }
 
 /* code intro image */
