@@ -67,6 +67,7 @@ img.padding{
 
 img.aboutImage{
 	float: right;
+	padding-top: 20px;
 }
 
 /* classes info */
@@ -81,7 +82,7 @@ img.aboutImage{
 .aboutWrapper{
 	padding-top: 65px;
 	padding-bottom: 65px;
-	height: 550px;
+	height: 600px;
 	overflow: hidden;
 }
 
