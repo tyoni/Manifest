@@ -132,7 +132,7 @@ img.aboutImage{
 }
 
 .smallInfo{
-	color: gold;
+	color: #ffad42;
 	font-size: 25px;
 	display: block;
 	float: left;
@@ -144,7 +144,7 @@ img.aboutImage{
 }
 
 .bigInfo{
-	color: gold;
+	color: #ffad42;
 	font-size: 65px;
 	display: block;
 	float: left;
