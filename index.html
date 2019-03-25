@@ -12,10 +12,39 @@
 		
 		<label class="switch switch-yes-no">
     		<input class="switch-input" type="checkbox" />
-    		<span class="switch-label" data-on="Yes" data-off="No"></span> 
+    		<span class="switch-label" data-on="Yes" data-off="No" onclick="nederlands"></span> 
     		<span class="switch-handle"></span> 
     	</label>
 			
+    		<script>
+    			function nederlands() {
+    				this.onclick = engels;
+
+  				var xhttp = new XMLHttpRequest();
+  					xhttp.onreadystatechange = function() {
+   			 	if (this.readyState == 4 && this.status == 200) {
+      				document.getElementById("demo").innerHTML = this.responseText;
+    				}
+ 				};
+ 		 			xhttp.open("GET", "nedIntro.txt", true);
+  					xhttp.send();
+    			}
+
+    			function engels(){
+
+    				this.onclick = nederlands;
+
+    				var xhttp = new XMLHttpRequest();
+  					xhttp.onreadystatechange = function() {
+   			 	if (this.readyState == 4 && this.status == 200) {
+      				document.getElementById("demo").innerHTML = this.responseText;
+    				}
+ 				};
+ 		 			xhttp.open("GET", "engIntro.txt", true);
+  					xhttp.send();
+    			}
+    		</script>
+
 		<h1>Complexity in Simplicity</h1>
 
 		<a href="html.html" target="_blank" title="I really enjoy working on this"><i><h3>HTML</a> &nbsp; <a href="css.html" target="_blank" title="I really enjoyed working on this too"><span style="overflow: hidden;">CSS<span style="color: grey; font-size:10px; font-style: italic; overflow: hidden;>"> <- not clickable in chrome currently!</span></span></a></h3></i>
@@ -80,20 +109,43 @@
 	</div>
 </article>
 
+
 <article>
-	<button type="button" onclick="loadDoc()">Druk voor vertaling</button>
-		<script>
-			function loadDoc() {
+
+		<label class="switch switch-yes-no">
+    		<input class="switch-input" type="checkbox" />
+    		<span id="1" class="switch-label" data-on="Klik voor NL" data-off="Press for ENG" onclick="nederlands()"></span> 
+    		<span class="switch-handle"></span> 
+    	</label>
+			
+    		<script>
+    			function nederlands() {
+    				document.getElementById("1").setAttribute( "onClick", "javascript: engels();" );
+
   				var xhttp = new XMLHttpRequest();
   					xhttp.onreadystatechange = function() {
    			 	if (this.readyState == 4 && this.status == 200) {
       				document.getElementById("demo").innerHTML = this.responseText;
     				}
  				};
- 		 xhttp.open("GET", "exIntro.txt", true);
-  		xhttp.send();
-			}
-</script>
+ 		 			xhttp.open("GET", "nedIntro.txt", true);
+  					xhttp.send();
+    			}
+
+    			function engels(){
+    				document.getElementById("1").setAttribute( "onClick", "javascript: nederlands();" );
+
+    				var xhttp = new XMLHttpRequest();
+  					xhttp.onreadystatechange = function() {
+   			 	if (this.readyState == 4 && this.status == 200) {
+      				document.getElementById("demo").innerHTML = this.responseText;
+    				}
+ 				};
+ 		 			xhttp.open("GET", "engIntro.txt", true);
+  					xhttp.send();
+    			
+    			}
+    		</script>	
 
 </article>
 

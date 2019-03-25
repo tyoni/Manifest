@@ -1,0 +1,38 @@
+				<br>
+				<br>
+				<i><u>Do you ever just see the floor as a really low shelf? 'Cause I do.</u></i>
+				<br>
+				<br>
+				Anyhow, my name is <i>Tyoni</i>.
+				<br>
+				<br>
+				Before all this I was an undercover agent working a case against a secret society. Sadly I had mistaken a book for a gun and well I'm here now.....
+				<br>
+				<br>
+				Right now I'm studying Communication & Multimedia Design at the Rotterdam University of Applied Sciences. Here I learn about <i>"Human Centered Design"</i>. It's quite interesting if I'm being honest especially the part of concepting and prototyping. I really enjoy thinking up new ideas and working them out with trial and error. Kind of a metaphor for life huh...
+				<br>
+				<br>
+				As of now I'm also looking for an internship so......
+				<br>
+				<br>
+				<span onclick="myFunction()" style="color:#238224; cursor:pointer;">Hit me up if you think I'll fit in with your company  ;-)</span>
+
+				<div id="snackbar">
+					Contact info:
+					<br>
+					<br>
+					Instagram: <a href="https://www.instagram.com/pastaconsumer/" target="_blank" style="text-decoration: none;color: #238224;"> PastaConsumer</a>
+					<br>
+					Email: <a href="mailto:tyoni@hotmail.com" style="text-decoration: none;color: #238224;">tyoni@hotmail.com</a>
+					<br>
+					LinkedIn: <a href="https://www.linkedin.com/in/tyoni-roosendaal-070073155/" target="_blank" style="text-decoration: none;color: #238224;">Tyoni van Roosendaal</a>
+				</div> 
+				<script>
+					function myFunction() {
+  						var x = document.getElementById("snackbar");
+
+  							x.className = "show";
+
+						  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+					} 
+				</script>
