@@ -12,13 +12,13 @@
 		
 		<label class="switch switch-yes-no">
     		<input class="switch-input" type="checkbox" />
-    		<span class="switch-label" data-on="Yes" data-off="No" onclick="nederlands"></span> 
+    		<span id="1" class="switch-label" data-on="Press for ENG" data-off="Klik voor NL" onclick="nederlands()"></span> 
     		<span class="switch-handle"></span> 
     	</label>
 			
     		<script>
     			function nederlands() {
-    				this.onclick = engels;
+    				document.getElementById("1").setAttribute( "onClick", "javascript: engels();" );
 
   				var xhttp = new XMLHttpRequest();
   					xhttp.onreadystatechange = function() {
@@ -31,8 +31,7 @@
     			}
 
     			function engels(){
-
-    				this.onclick = nederlands;
+    				document.getElementById("1").setAttribute( "onClick", "javascript: nederlands();" );
 
     				var xhttp = new XMLHttpRequest();
   					xhttp.onreadystatechange = function() {
@@ -42,6 +41,7 @@
  				};
  		 			xhttp.open("GET", "engIntro.txt", true);
   					xhttp.send();
+    			
     			}
     		</script>
 
@@ -112,40 +112,7 @@
 
 <article>
 
-		<label class="switch switch-yes-no">
-    		<input class="switch-input" type="checkbox" />
-    		<span id="1" class="switch-label" data-on="Press for ENG" data-off="Klik voor NL" onclick="nederlands()"></span> 
-    		<span class="switch-handle"></span> 
-    	</label>
-			
-    		<script>
-    			function nederlands() {
-    				document.getElementById("1").setAttribute( "onClick", "javascript: engels();" );
-
-  				var xhttp = new XMLHttpRequest();
-  					xhttp.onreadystatechange = function() {
-   			 	if (this.readyState == 4 && this.status == 200) {
-      				document.getElementById("demo").innerHTML = this.responseText;
-    				}
- 				};
- 		 			xhttp.open("GET", "nedIntro.txt", true);
-  					xhttp.send();
-    			}
-
-    			function engels(){
-    				document.getElementById("1").setAttribute( "onClick", "javascript: nederlands();" );
-
-    				var xhttp = new XMLHttpRequest();
-  					xhttp.onreadystatechange = function() {
-   			 	if (this.readyState == 4 && this.status == 200) {
-      				document.getElementById("demo").innerHTML = this.responseText;
-    				}
- 				};
- 		 			xhttp.open("GET", "engIntro.txt", true);
-  					xhttp.send();
-    			
-    			}
-    		</script>	
+	
 
 </article>
 
