@@ -18,11 +18,12 @@ h1 {
 	text-align: center;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 50px;
-	margin-top: -15px;
+	margin-top: -7px;
 }
 
 h2 {
 	margin-top: 25px;
+	margin-bottom: -10px;
 	text-align: center;
 	font-family: 'Work Sans', sans-serif;
 }
@@ -162,7 +163,7 @@ img.aboutImage{
 	margin-right: auto;
 	padding-bottom: 0px;
 	overflow: auto;
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 /* project text */
@@ -328,9 +329,10 @@ p.pt{
 .switch-label:before {
 	content: attr(data-off);
 	right: 11px;
-	color: #aaaaaa;
-	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+	color: #FFFFFF; /* text of unchecked NL */
+
 }
+
 .switch-label:after {
 	content: attr(data-on);
 	left: 11px;
@@ -367,7 +369,7 @@ p.pt{
 	margin: -6px 0 0 -6px;
 	width: 12px;
 	height: 12px;
-	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background: linear-gradient(to bottom, #eeeeee, #f9c15e);
 	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
 	border-radius: 6px;
 	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
@@ -409,20 +411,22 @@ p.pt{
 	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.1);
 }
 .switch-yes-no .switch-label:after {
-	color: #FFFFFF;
-	background: #32CD32;
+	color: #FFFFFF; /* text of checked ENG */
+	background: #d62a1d; /* background of checked ENG */
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
 }
 .switch-yes-no .switch-label:before {
-	background: #eceeef;
+	background: #ffb83d; /* background of unchecked NL */
 	backface-visibility: hidden;
 }
 .switch-yes-no .switch-handle {
 	display: none;
 }
+
+/* ffb83d f9c15e*/
 .switch-yes-no .switch-input:checked ~ .switch-label {
-	background: #FFF;
+	background: #FFF;	
 	border-color: #0088cc;
 }
 .switch-yes-no .switch-input:checked ~ .switch-label:before {
