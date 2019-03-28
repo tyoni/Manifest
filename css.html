@@ -20,11 +20,12 @@ h1 {
 	text-align: center;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 50px;
-	margin-top: -15px;
+	margin-top: -7px;
 }
 
 h2 {
 	margin-top: 25px;
+	margin-bottom: -10px;
 	text-align: center;
 	font-family: 'Work Sans', sans-serif;
 }
@@ -134,7 +135,7 @@ img.aboutImage{
 }
 
 .smallInfo{
-	color: gold;
+	color: #ffad42;
 	font-size: 25px;
 	display: block;
 	float: left;
@@ -146,7 +147,7 @@ img.aboutImage{
 }
 
 .bigInfo{
-	color: gold;
+	color: #ffad42;
 	font-size: 65px;
 	display: block;
 	float: left;
@@ -164,6 +165,7 @@ img.aboutImage{
 	margin-right: auto;
 	padding-bottom: 0px;
 	overflow: auto;
+	margin-top: 90px;
 }
 
 /* project text */
@@ -229,6 +231,211 @@ p.pt{
 		-webkit-transform: scale(1);
 		opacity: 1;	
 	}		
+}
+
+/* Snackbar code */
+#snackbar {
+ 	visibility: hidden; /* Hidden by default. Visible on click */
+ 	min-width: 250px; /* Set a default minimum width */
+	margin-left: -125px; /* Divide value of min-width by 2 */
+ 	background-color: #eaeaea; /* Black background color */
+ 	color: #fff; /* White text color */
+  	text-align: center; /* Centered text */
+ 	border-radius: 2px; /* Rounded borders */
+ 	padding: 16px; /* Padding */
+ 	position: fixed; /* Sit on top of the screen */
+ 	z-index: 1; /* Add a z-index if needed */
+ 	left: 50%; /* Center the snackbar */
+ 	bottom: 30px; /* 30px from the bottom */
+ 	letter-spacing: 3px;
+ 	line-height: 27px;
+  	font-size: 15px;
+	font-family: 'Quicksand', sans-serif;
+	color: #222b2e;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+.switch {
+	position: relative;
+	display: block;
+	vertical-align: top;
+	width: 100px;
+	height: 30px;
+	padding: 3px;
+	margin: 0 10px 10px 0;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	box-sizing:content-box;
+}
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	box-sizing:content-box;
+}
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #eceeef;
+	border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+	box-sizing:content-box;
+}
+.switch-label:before, .switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+	box-sizing:content-box;
+}
+.switch-label:before {
+	content: attr(data-off);
+	right: 11px;
+	color: #FFFFFF; /* text of unchecked NL */
+
+}
+
+.switch-label:after {
+	content: attr(data-on);
+	left: 11px;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+	background: #E1B42B;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input:checked ~ .switch-label:before {
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+	opacity: 1;
+}
+.switch-handle {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(to bottom, #eeeeee, #f9c15e);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch-input:checked ~ .switch-handle {
+	left: 74px;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+ 
+/* Transition
+========================== */
+.switch-label, .switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+		-o-transition: All 0.3s ease;
+}
+
+/* Switch Yes No
+==========================*/
+.switch-yes-no {
+	padding: 0;
+	margin: 15px 0 -50px;
+	background: #FFF;
+	border-radius: 0;
+	background-image: none;
+}
+.switch-yes-no .switch-label {
+	box-shadow: none;
+	background: none;
+}
+.switch-yes-no .switch-label:after, .switch-yes-no .switch-label:before {
+	width: 100%;
+	height: 70%;
+	top: 5px;
+	left: 0;
+	text-align: center;
+	padding-top: 10%;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.switch-yes-no .switch-label:after {
+	color: #FFFFFF; /* text of checked ENG */
+	background: #d62a1d; /* background of checked ENG */
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+.switch-yes-no .switch-label:before {
+	background: #ffb83d; /* background of unchecked NL */
+	backface-visibility: hidden;
+}
+.switch-yes-no .switch-handle {
+	display: none;
+}
+
+/* ffb83d f9c15e*/
+.switch-yes-no .switch-input:checked ~ .switch-label {
+	background: #FFF;	
+	border-color: #0088cc;
+}
+.switch-yes-no .switch-input:checked ~ .switch-label:before {
+	transform: rotateY(180deg)
+}
+.switch-yes-no .switch-input:checked ~ .switch-label:after {
+	transform: rotateY(0)
 }
 
 </xmp>
