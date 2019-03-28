@@ -8,8 +8,6 @@
 
 <body> 
 <article>
-		<h2>Tyoni</h2>
-		<center>
 
 		<label class="switch switch-yes-no">
     		<input class="switch-input" type="checkbox" />
@@ -17,7 +15,7 @@
     		<span class="switch-handle"></span> 
     	</label>
 
-		</center>
+		<h2>Tyoni</h2>
     		<script>
     			function nederlands() {
     				document.getElementById("1").setAttribute( "onClick", "javascript: engels();" );
@@ -25,7 +23,7 @@
   				var xhttp = new XMLHttpRequest();
   					xhttp.onreadystatechange = function() {
    			 	if (this.readyState == 4 && this.status == 200) {
-      				document.getElementById("demo").innerHTML = this.responseText;
+      				document.getElementById("translatethisyo").innerHTML = this.responseText;
     				}
  				};
  		 			xhttp.open("GET", "nedIntro.txt", true);
@@ -38,7 +36,7 @@
     				var xhttp = new XMLHttpRequest();
   					xhttp.onreadystatechange = function() {
    			 	if (this.readyState == 4 && this.status == 200) {
-      				document.getElementById("demo").innerHTML = this.responseText;
+      				document.getElementById("translatethisyo").innerHTML = this.responseText;
     				}
  				};
  		 			xhttp.open("GET", "engIntro.txt", true);
@@ -46,7 +44,9 @@
     			
     			}
     		</script>
-
+</article>
+<span id="translatethisyo">
+<article>
 		<h1>Complexity in Simplicity</h1>
 
 		<a href="html.html" target="_blank" title="I really enjoy working on this"><i><h3>HTML</a> &nbsp; <a href="css.html" target="_blank" title="I really enjoyed working on this too"><span style="overflow: hidden;">CSS<span style="color: grey; font-size:10px; font-style: italic; overflow: hidden;>"> <- not clickable in chrome currently!</span></span></a></h3></i>
@@ -57,7 +57,6 @@
 	<div id="object" class="fadeIn">
 		<img class="padding" src="assets\images\me.jpg" alt="Hey that's me!" style="width:20%;height:auto;">
 	</div>
-
 		<p class="indent">
 		Sometimes I just feel like trying something new. Learning new things is what keeps me fresh. It teaches me a new perspective. A way to unlock a little bit more of the universe. A place few have dared to venture. Sometimes I also enjoy taking naps though.
 		</p>	
@@ -125,7 +124,6 @@
 		<div class="aboutWrapper">
 			<p class="aboutText">
 				<strong> Some info about me</strong>
-				<span id="demo">
 				<br>
 				<br>
 				<i><u>Do you ever just see the floor as a really low shelf? 'Cause I do.</u></i>
