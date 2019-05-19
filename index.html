@@ -1,157 +1,50 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style.css">
+		<title>Call me ;)</title>
+	</head>
+	<body>
+		<header class="v-header container">
+			<div class="fullscreen-video-wrap">
+				<video src="videos/short.mp4" autoplay="true" loop="true" muted="true"></video>
+			</div>
+			<div class="header-overlay"></div>
+			<div class="header-content">
+				<h1>Soms is de beste user experience</h1>
+				<p>gratis tafelvoetbal</p>
+				
+				<a href="#ikbendit" class="btn extra">Wie ben ik?</a>
+			</div>
+					
+		</header>
 
-<head>
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="user-scalable = yes">
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-</head>
-
-<body> 
-<article>
-
-		<label class="switch switch-yes-no">
-    		<input class="switch-input" type="checkbox" />
-    		<span id="1" class="switch-label" data-on="Press for ENG" data-off="Klik voor NL" onclick="nederlands()"></span> 
-    		<span class="switch-handle"></span> 
-    	</label>
-
-		<h2>Tyoni</h2>
-    		<script>
-    			function nederlands() {
-    				document.getElementById("1").setAttribute( "onClick", "javascript: engels();" );
-
-  				var xhttp = new XMLHttpRequest();
-  					xhttp.onreadystatechange = function() {
-   			 	if (this.readyState == 4 && this.status == 200) {
-      				document.getElementById("translatethisyo").innerHTML = this.responseText;
-    				}
- 				};
- 		 			xhttp.open("GET", "nedIntro.txt", true);
-  					xhttp.send();
-    			}
-
-    			function engels(){
-    				document.getElementById("1").setAttribute( "onClick", "javascript: nederlands();" );
-
-    				var xhttp = new XMLHttpRequest();
-  					xhttp.onreadystatechange = function() {
-   			 	if (this.readyState == 4 && this.status == 200) {
-      				document.getElementById("translatethisyo").innerHTML = this.responseText;
-    				}
- 				};
- 		 			xhttp.open("GET", "engIntro.txt", true);
-  					xhttp.send();
-    			
-    			}
-    		</script>
-</article>
-<span id="translatethisyo">
-<article>
-		<h1>Complexity in Simplicity</h1>
-
-		<a href="html.html" target="_blank" title="I really enjoy working on this"><i><h3>HTML</a> &nbsp; <a href="css.html" target="_blank" title="I really enjoyed working on this too"><span style="overflow: hidden;">CSS<span style="color: grey; font-size:10px; font-style: italic; overflow: hidden;>"> <- not clickable in chrome currently!</span></span></a></h3></i>
-</article> 
-
-<article>
-	
-	<div id="object" class="fadeIn">
-		<img class="padding" src="assets\images\me.jpg" alt="Hey that's me!" style="width:20%;height:auto;">
-	</div>
-		<p class="indent">
-		Sometimes I just feel like trying something new. Learning new things is what keeps me fresh. It teaches me a new perspective. A way to unlock a little bit more of the universe. A place few have dared to venture. Sometimes I also enjoy taking naps though.
-		</p>	
-</article>
-
-<article>
-	<div class="wrapperInfo">
-			<span class="smallInfo">projects worked on</span><span class="bigInfo">4</span>
-			<span class="smallInfo">hobbies</span><span class="bigInfo">&#8734</span>
-			<span class="smallInfo">amount of socks</span><span class="bigInfo">61</span>
-	</div>
-</article>
-
-<article>
-	<div class="wrapper">
-		<div class="project">
-			<a href="project1.html" target="_blank"><img class="padding" src="assets\images\wrlogo.svg" alt="Project Woonstad" style="width:85%;height:auto;"></a> 
-
-			<p class="ptTitle"> 
-				School Project
-			</p>
-
-			<p class="pt"> 
-				Woonstad Rotterdam requested us to help them improve their customer satisfaction rating, focussing on their first time resolution and first time fix.
-			</p>
-		</div>
-
-		<div class="project2">
-			<img class="padding" src="assets\images\wrlogo.svg" alt="Project Woonstad" style="width:85%;height:auto;">
-
-			<p class="ptTitle"> 
-				School Project
-			</p>
-
-			<p class="pt"> 
-				Woonstad Rotterdam requested us to help them improve their customer satisfaction rating, focussing on their first time resolution and first time fix.
-			</p>
-		</div>
-
-		<div class="project3">
-			<img class="padding" src="assets\images\wrlogo.svg" alt="Project Woonstad" style="width:85%;height:auto;">
-
-			<p class="ptTitle"> 
-				School Project
-			</p>
-
-			<p class="pt"> 
-				Woonstad Rotterdam requested us to help them improve their customer satisfaction rating, focussing on their first time resolution and first time fix.
-			</p>
-		</div>
-	</div>
-</article>
-
-
-<article>
-
-	
-
-</article>
-
-<article>
-	<div class="aboutWrapper">
-		<img class="aboutImage" src="assets\images\datbenik.jpg" alt="Me again but looking up" style="width:50%;height:auto;">
-
-		<div class="aboutWrapper">
-			<p class="aboutText">
-				<strong> Some info about me</strong>
-				<br>
-				<br>
-				<i><u>Do you ever just see the floor as a really low shelf? 'Cause I do.</u></i>
-				<br>
-				<br>
-				Anyhow, my name is <i>Tyoni</i>.
-				<br>
-				<br>
-				Before all this I was an undercover agent working a case against a secret society. Sadly I had mistaken a book for a gun and well I'm here now.....
-				<br>
-				<br>
-				Right now I'm studying Communication & Multimedia Design at the Rotterdam University of Applied Sciences. Here I learn about <i>"Human Centered Design"</i>. It's quite interesting if I'm being honest especially the part of concepting and prototyping. I really enjoy thinking up new ideas and working them out with trial and error. Kind of a metaphor for life huh...
-				<br>
-				<br>
-				As of now I'm also looking for an internship so......
-				<br>
-				<br>
-				<span onclick="myFunction()" style="color:#238224; cursor:pointer;">Hit me up if you think I'll fit in with your company  ;-)</span>
+		<section class="section section-a" id="ikbendit">
+			<div class="container">
+					<div class="aboutP">
+						<h1>Wie ben ik?</h1>
+						<p>Hoi. Ik ben Tyoni A. van Roosendaal.</p>
+						
+						<p>Ik ben 19 jaar(21 september), krullenbol en <i>Communication & Mutlimedia</i> student op de Hogeschool Rotterdam.</p>
+						
+						<p>Hier speel ik gratis tafelvoetbal en leer ik af en toe nog iets over <i>Human-centered Design</i>. Dat betekent dat ik leer hoe ik bij het ontwerpen ervoor kan zorgen dat iedereen tevreden zal zijn met de oplossing. Dit doe ik door veel onderzoek te doen en veel met mijn doelgroep in contact te komen.</p>
+						
+						<br />
+						
+						<span onclick="myFunction()" style="color:#238224; cursor:pointer;">Nog meer over mij willen weten?</span>
 
 				<div id="snackbar">
 					Contact info:
 					<br>
 					<br>
-					Instagram: <a href="https://www.instagram.com/pastaconsumer/" target="_blank" style="text-decoration: none;color: #238224;"> PastaConsumer</a>
-					<br>
 					Email: <a href="mailto:tyoni@hotmail.com" style="text-decoration: none;color: #238224;">tyoni@hotmail.com</a>
 					<br>
-					LinkedIn: <a href="https://www.linkedin.com/in/tyoni-roosendaal-070073155/" target="_blank" style="text-decoration: none;color: #238224;">Tyoni van Roosendaal</a>
+					Instagram: <a href="https://www.instagram.com/pastaconsumer/" target="_blank" style="text-decoration: none;color: #238224;"> PastaConsumer</a>
+					<br>
+					LinkedIn: <a href="https://www.linkedin.com/in/tyoni-roosendaal-070073155/" target="_blank" style="text-decoration: none;color: #238224;">Tyoni A. van Roosendaal</a>
 				</div> 
 				<script>
 					function myFunction() {
@@ -162,14 +55,39 @@
 						  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 					} 
 				</script>
+						
+					</div>
+					<div class="MePhoto">
+						<img src="images/me.jpg" alt="Foto van mij" width="75%" height="75%">
+					</div>
+				</div>
+		</section>
+	
+		<section class="section section-b">
+			<div class="container">
+				<h1>Projecten</h1>
+					<div class="project-container">
+					<div class="projects">
+						<a href="woonstad.html" target="_blank"><img src="images/logo_A.svg" alt="woonstad logo"> </a>
+						
+						<p>Voor dit project gingen ik en mijn team kijken of we de <i>"Face-to-face"</i> tussen klant en woonstad konden verbeteren. Ze vroegen ons ook om te focussen op toekomstige oplossingen. <a href="woonstad.html" target="_blank"> Lees verder </a> </p> 
+						
+					</div>
+					<div class="projects">	
+						<img src="images/nrc.png" alt="NRC logo">
+						
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+						
+					</div>		
+					<div class="projects">	
+						<img src="images/logo_A.svg" alt="woonstad logo">
+						
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+						
+					</div>
+					</div>
+				</div>
+		</section>
 
-				</span>
-			</p>		
-		</div>
-
-	</div>
-</article>
-
-</body>
-
+	</body>
 </html>
