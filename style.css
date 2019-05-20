@@ -66,7 +66,7 @@ body {
 .header-content{
 	margin-left: 40px;
 	z-index: 2;
-	overflow: hidden;
+
 }
 
 .header-content h1{
@@ -80,7 +80,7 @@ body {
 	font-family: 'Playfair Display SC', serif;
 	font-size: 1.5rem;
 	display: block;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .btn{
@@ -98,12 +98,13 @@ body {
 .aboutP{
 	display: block;
 	margin: auto;
-	max-width: 490px;
+	max-width: 600px;
 	position: absolute;
 	float: left;
 	top: 50%;
 	left: 25vw;
-	transform: translateY(-50%)
+	transform: translateY(-50%);
+	text-align: left;
 }
 
 .MePhoto{
@@ -178,7 +179,7 @@ body {
  	padding: 16px; /* Padding */
  	position: fixed; /* Sit on top of the screen */
  	z-index: 1; /* Add a z-index if needed */
- 	left: 39%; /* Center the snackbar */
+ 	left: 21%; /* Center the snackbar */
  	bottom: 30px; /* 30px from the bottom */
  	letter-spacing: 3px;
  	line-height: 27px;
