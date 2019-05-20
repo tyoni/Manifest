@@ -8,6 +8,7 @@
 
 html{
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 
@@ -45,8 +46,9 @@ body {
 }
 
 .fullscreen-video-wrap video{
-	min-width: 100%;
-	min-height: 100%;
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
 }
 
 .header-overlay{
@@ -58,11 +60,13 @@ body {
 	background: #000000;
 	z-index: 1;
 	opacity: 0.4;
+	overflow: hidden;
 }
 
 .header-content{
 	margin-left: 40px;
 	z-index: 2;
+	overflow: hidden;
 }
 
 .header-content h1{
