@@ -242,7 +242,7 @@ body {
 .textProject{
 	float: left;
 	display: block;
-
+	width: 100%;
 }
 
 .slideshow{
