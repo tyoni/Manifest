@@ -37,6 +37,7 @@ body {
 	text-align: center;
 }
 
+
 .fullscreen-video-wrap{
 	position: absolute;
 	top: 0;
@@ -110,16 +111,18 @@ body {
 	text-align: left;
 }
 
-.MePhoto{
+.photo{
 	max-width: 375px;
 	max-height: ‭‬501px;
-	overflow: hidden;
-	position: absolute;
-	margin: auto;
 	top: 50%;
 	left: 55vw;
 	transform: translateY(-50%);
-	
+	position: absolute;
+	margin: auto;	
+}
+
+.nhf{
+	top: 45%
 }
 
 .section-a{
@@ -238,6 +241,19 @@ body {
 	text-align: left;
 	padding-top: 1vh;
 	display: block;
+	z-index: 4;
+}
+
+.Deliverables a{
+	color: #6DF3D1;
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+.key{
+	color: #6DF3D1;
 }
 
 .textProject{
@@ -253,6 +269,7 @@ body {
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
+	z-index: 1;
   }
   
   /* Next & previous buttons */
