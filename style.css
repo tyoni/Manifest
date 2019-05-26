@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:700i');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Pompiere&display=swap');
 
 *{
 	box-sizing: border-box
@@ -12,10 +9,13 @@ html{
 	overflow-x: hidden;
 }
 
+h1{
+	font-family: 'Pompiere', cursive;
+}
 
 body {
 	margin: 0;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	font-size: 1rem;
 	line-height: 1.3;
 	color:#333;
@@ -65,30 +65,32 @@ body {
 }
 
 .header-content{
-	margin-left: 40px;
+	margin-left: -30vw;
 	z-index: 2;
-
 }
 
 .header-content h1{
-	font-family: 'Muli'; 
 	font-size: 50px;
 	width: 800px;
 	margin-bottom: 0;
+	color: #FFF;
 }
 
 .header-content p{
-	font-family: 'Playfair Display SC', serif;
 	font-size: 1.5rem;
 	display: block;
 	padding-bottom: 1rem;
+	color: #FFF;
 }
 
 .btn{
-	background: #333;
+	font-family: 'Pompiere', cursive;
+	background: 0;
 	color: #FFFFFF;
-	font-size: 1.2rem;
-	padding: 0.5rem 0.5rem;
+	border: 4px solid #9F1D35;
+	border-radius: 50px;
+	font-size: 1.5rem;
+	padding: 0.5rem 1.2rem;
 	text-decoration: none;
 }
 
@@ -121,8 +123,8 @@ body {
 }
 
 .section-a{
-	background: #333;
-	color: #FFFFFF;
+	background: #9F1D35;
+	color: #fff;
 	height: 540px;
 	position: relative;
 }
@@ -172,10 +174,10 @@ body {
 #snackbar {
  	visibility: hidden; /* Hidden by default. Visible on click */
  	min-width: 250px; /* Set a default minimum width */
-	margin-left: -125px; /* Divide value of min-width by 2 */
- 	background-color: #eaeaea; /* Black background color */
- 	color: #fff; /* White text color */
-  	text-align: center; /* Centered text */
+	margin-left: -126px; /* Divide value of min-width by 2 */
+ 	background-color: #9F1D35; /* Black background color */
+ 	color: #FFF; /* White text color */
+  text-align: left; /* Centered text */
  	border-radius: 2px; /* Rounded borders */
  	padding: 16px; /* Padding */
  	position: fixed; /* Sit on top of the screen */
@@ -184,9 +186,7 @@ body {
  	bottom: 30px; /* 30px from the bottom */
  	letter-spacing: 3px;
  	line-height: 27px;
-  	font-size: 15px;
-	
-	color: #222b2e;
+	font-size: 15px;
 }
 
 .ProjectAbout{
