@@ -115,7 +115,6 @@ body {
 }
 
 .photo img{
-	margin-top: 30px;
 	max-width: 35%;
 	max-height: ‭‬35%;	
 }
@@ -142,7 +141,6 @@ body {
 
 .section-b p{
 	display: block;
-	width: 400px;
 	overflow: hidden;
 }
 
@@ -191,19 +189,12 @@ body {
 	font-size: 15px;
 }
 
-.ProjectAbout{
-	margin-top: 5vh;
-}
-
-.ProjectAbout img{
-	width: 75%;
-	height: 75%;
-	margin-top: 10vh;
-}
-
-.ProjectAbout p{
+.AInfo{
 	text-align: left;
-	width: 50%;
+	display: block;
+	float: left;
+	overflow: hidden;
+	max-width: 500px;
 }
 
 #snackbar.show {
