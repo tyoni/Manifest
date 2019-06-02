@@ -347,10 +347,21 @@ body {
 	to {opacity: 1}
   }
 
+
 @media(max-width:960px){
 	.container{
 		padding-right: 1rem;
 		padding-left: 1rem;
 	}
+}
+
+/* Footer Extra */
+
+footer{
+	color: #FFF;
+	background-color: #FFF;
+	position: absolute;
+	width: 100vw;
+	margin-top: 2vh;
 }
 
